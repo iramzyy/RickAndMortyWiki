@@ -11,6 +11,7 @@
 		BA93AD742CA5C8EC00D616AD /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = BA93AD732CA5C8EC00D616AD /* Core */; };
 		BA93AD772CA5C92A00D616AD /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = BA93AD762CA5C92A00D616AD /* Core */; };
 		BA93AD902CA5C95700D616AD /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = BA93AD8F2CA5C95700D616AD /* Core */; };
+		BA93ADBF2CA5CEFD00D616AD /* Logger in Frameworks */ = {isa = PBXBuildFile; productRef = BA93ADBE2CA5CEFD00D616AD /* Logger */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA93ADBF2CA5CEFD00D616AD /* Logger in Frameworks */,
 				BA93AD712CA5C8C100D616AD /* Core in Frameworks */,
 				BA93AD902CA5C95700D616AD /* Core in Frameworks */,
 				BA93AD742CA5C8EC00D616AD /* Core in Frameworks */,
@@ -125,6 +127,7 @@
 				BA93AD732CA5C8EC00D616AD /* Core */,
 				BA93AD762CA5C92A00D616AD /* Core */,
 				BA93AD8F2CA5C95700D616AD /* Core */,
+				BA93ADBE2CA5CEFD00D616AD /* Logger */,
 			);
 			productName = RickAndMortyWiki;
 			productReference = BAC3AE3A2CA5AC5900D30AEF /* RickAndMortyWiki.app */;
@@ -211,6 +214,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				BA93AD8E2CA5C95700D616AD /* XCLocalSwiftPackageReference "Core" */,
+				BA93ADBD2CA5CEFD00D616AD /* XCLocalSwiftPackageReference "Logger" */,
 			);
 			productRefGroup = BAC3AE3B2CA5AC5900D30AEF /* Products */;
 			projectDirPath = "";
@@ -590,6 +594,10 @@
 			isa = XCLocalSwiftPackageReference;
 			relativePath = Core;
 		};
+		BA93ADBD2CA5CEFD00D616AD /* XCLocalSwiftPackageReference "Logger" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Logger;
+		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -608,6 +616,10 @@
 		BA93AD8F2CA5C95700D616AD /* Core */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Core;
+		};
+		BA93ADBE2CA5CEFD00D616AD /* Logger */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Logger;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
