@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +30,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		BAC3AE622CA5AC5B00D30AEF /* Exceptions for "RickAndMortyWiki" folder in "RickAndMortyWiki" target */ = {
+		BAC3AE622CA5AC5B00D30AEF /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -40,24 +40,9 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		BAC3AE3C2CA5AC5900D30AEF /* RickAndMortyWiki */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				BAC3AE622CA5AC5B00D30AEF /* Exceptions for "RickAndMortyWiki" folder in "RickAndMortyWiki" target */,
-			);
-			path = RickAndMortyWiki;
-			sourceTree = "<group>";
-		};
-		BAC3AE532CA5AC5B00D30AEF /* RickAndMortyWikiTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = RickAndMortyWikiTests;
-			sourceTree = "<group>";
-		};
-		BAC3AE5D2CA5AC5B00D30AEF /* RickAndMortyWikiUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = RickAndMortyWikiUITests;
-			sourceTree = "<group>";
-		};
+		BAC3AE3C2CA5AC5900D30AEF /* RickAndMortyWiki */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (BAC3AE622CA5AC5B00D30AEF /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = RickAndMortyWiki; sourceTree = "<group>"; };
+		BAC3AE532CA5AC5B00D30AEF /* RickAndMortyWikiTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = RickAndMortyWikiTests; sourceTree = "<group>"; };
+		BAC3AE5D2CA5AC5B00D30AEF /* RickAndMortyWikiUITests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = RickAndMortyWikiUITests; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +185,7 @@
 				};
 			};
 			buildConfigurationList = BAC3AE352CA5AC5900D30AEF /* Build configuration list for PBXProject "RickAndMortyWiki" */;
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -208,7 +194,6 @@
 			);
 			mainGroup = BAC3AE312CA5AC5900D30AEF;
 			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = BAC3AE3B2CA5AC5900D30AEF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -298,7 +283,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -332,7 +317,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
