@@ -13,6 +13,7 @@
 		BA93AD902CA5C95700D616AD /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = BA93AD8F2CA5C95700D616AD /* Core */; };
 		BA93ADBF2CA5CEFD00D616AD /* Logger in Frameworks */ = {isa = PBXBuildFile; productRef = BA93ADBE2CA5CEFD00D616AD /* Logger */; };
 		BA93ADEE2CA5DFE600D616AD /* StorageKit in Frameworks */ = {isa = PBXBuildFile; productRef = BA93ADED2CA5DFE600D616AD /* StorageKit */; };
+		BA93AE1D2CA5F9DB00D616AD /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = BA93AE1C2CA5F9DB00D616AD /* Networking */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 				BA93AD902CA5C95700D616AD /* Core in Frameworks */,
 				BA93AD742CA5C8EC00D616AD /* Core in Frameworks */,
 				BA93AD772CA5C92A00D616AD /* Core in Frameworks */,
+				BA93AE1D2CA5F9DB00D616AD /* Networking in Frameworks */,
 				BA93ADEE2CA5DFE600D616AD /* StorageKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -131,6 +133,7 @@
 				BA93AD8F2CA5C95700D616AD /* Core */,
 				BA93ADBE2CA5CEFD00D616AD /* Logger */,
 				BA93ADED2CA5DFE600D616AD /* StorageKit */,
+				BA93AE1C2CA5F9DB00D616AD /* Networking */,
 			);
 			productName = RickAndMortyWiki;
 			productReference = BAC3AE3A2CA5AC5900D30AEF /* RickAndMortyWiki.app */;
@@ -219,6 +222,7 @@
 				BA93AD8E2CA5C95700D616AD /* XCLocalSwiftPackageReference "Core" */,
 				BA93ADBD2CA5CEFD00D616AD /* XCLocalSwiftPackageReference "Logger" */,
 				BA93ADEC2CA5DFE600D616AD /* XCLocalSwiftPackageReference "StorageKit" */,
+				BA93AE1B2CA5F9DB00D616AD /* XCLocalSwiftPackageReference "Networking" */,
 			);
 			productRefGroup = BAC3AE3B2CA5AC5900D30AEF /* Products */;
 			projectDirPath = "";
@@ -606,6 +610,10 @@
 			isa = XCLocalSwiftPackageReference;
 			relativePath = StorageKit;
 		};
+		BA93AE1B2CA5F9DB00D616AD /* XCLocalSwiftPackageReference "Networking" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Networking;
+		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -632,6 +640,10 @@
 		BA93ADED2CA5DFE600D616AD /* StorageKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = StorageKit;
+		};
+		BA93AE1C2CA5F9DB00D616AD /* Networking */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Networking;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
