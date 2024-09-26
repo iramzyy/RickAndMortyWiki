@@ -6,6 +6,13 @@
 	objectVersion = 70;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		BA93AD712CA5C8C100D616AD /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = BA93AD702CA5C8C100D616AD /* Core */; };
+		BA93AD742CA5C8EC00D616AD /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = BA93AD732CA5C8EC00D616AD /* Core */; };
+		BA93AD772CA5C92A00D616AD /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = BA93AD762CA5C92A00D616AD /* Core */; };
+		BA93AD902CA5C95700D616AD /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = BA93AD8F2CA5C95700D616AD /* Core */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		BAC3AE512CA5AC5B00D30AEF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -50,6 +57,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA93AD712CA5C8C100D616AD /* Core in Frameworks */,
+				BA93AD902CA5C95700D616AD /* Core in Frameworks */,
+				BA93AD742CA5C8EC00D616AD /* Core in Frameworks */,
+				BA93AD772CA5C92A00D616AD /* Core in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +121,10 @@
 			);
 			name = RickAndMortyWiki;
 			packageProductDependencies = (
+				BA93AD702CA5C8C100D616AD /* Core */,
+				BA93AD732CA5C8EC00D616AD /* Core */,
+				BA93AD762CA5C92A00D616AD /* Core */,
+				BA93AD8F2CA5C95700D616AD /* Core */,
 			);
 			productName = RickAndMortyWiki;
 			productReference = BAC3AE3A2CA5AC5900D30AEF /* RickAndMortyWiki.app */;
@@ -194,6 +209,9 @@
 			);
 			mainGroup = BAC3AE312CA5AC5900D30AEF;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				BA93AD8E2CA5C95700D616AD /* XCLocalSwiftPackageReference "Core" */,
+			);
 			productRefGroup = BAC3AE3B2CA5AC5900D30AEF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -566,6 +584,32 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		BA93AD8E2CA5C95700D616AD /* XCLocalSwiftPackageReference "Core" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Core;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BA93AD702CA5C8C100D616AD /* Core */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Core;
+		};
+		BA93AD732CA5C8EC00D616AD /* Core */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Core;
+		};
+		BA93AD762CA5C92A00D616AD /* Core */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Core;
+		};
+		BA93AD8F2CA5C95700D616AD /* Core */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Core;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BAC3AE322CA5AC5900D30AEF /* Project object */;
 }
