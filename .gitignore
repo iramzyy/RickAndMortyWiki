@@ -1,0 +1,5 @@
+# MacOS Specific
+.DS_Store
+.Trashes
+*.swp
+*.lock
