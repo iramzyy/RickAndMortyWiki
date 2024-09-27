@@ -17,6 +17,8 @@
 		BA93AE4C2CA6CBFC00D616AD /* DesignKit in Frameworks */ = {isa = PBXBuildFile; productRef = BA93AE4B2CA6CBFC00D616AD /* DesignKit */; };
 		BA93AE912CA73CD500D616AD /* CharactersDomain in Frameworks */ = {isa = PBXBuildFile; productRef = BA93AE902CA73CD500D616AD /* CharactersDomain */; };
 		BA93AE932CA73CD500D616AD /* CoreDomain in Frameworks */ = {isa = PBXBuildFile; productRef = BA93AE922CA73CD500D616AD /* CoreDomain */; };
+		BA93AED82CA77D3500D616AD /* CharactersData in Frameworks */ = {isa = PBXBuildFile; productRef = BA93AED72CA77D3500D616AD /* CharactersData */; };
+		BA93AEDA2CA77D3500D616AD /* DataConfigurations in Frameworks */ = {isa = PBXBuildFile; productRef = BA93AED92CA77D3500D616AD /* DataConfigurations */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 			files = (
 				BA93ADBF2CA5CEFD00D616AD /* Logger in Frameworks */,
 				BA93AD712CA5C8C100D616AD /* Core in Frameworks */,
+				BA93AED82CA77D3500D616AD /* CharactersData in Frameworks */,
+				BA93AEDA2CA77D3500D616AD /* DataConfigurations in Frameworks */,
 				BA93AD902CA5C95700D616AD /* Core in Frameworks */,
 				BA93AE932CA73CD500D616AD /* CoreDomain in Frameworks */,
 				BA93AE4C2CA6CBFC00D616AD /* DesignKit in Frameworks */,
@@ -143,6 +147,8 @@
 				BA93AE4B2CA6CBFC00D616AD /* DesignKit */,
 				BA93AE902CA73CD500D616AD /* CharactersDomain */,
 				BA93AE922CA73CD500D616AD /* CoreDomain */,
+				BA93AED72CA77D3500D616AD /* CharactersData */,
+				BA93AED92CA77D3500D616AD /* DataConfigurations */,
 			);
 			productName = RickAndMortyWiki;
 			productReference = BAC3AE3A2CA5AC5900D30AEF /* RickAndMortyWiki.app */;
@@ -234,6 +240,7 @@
 				BA93AE1B2CA5F9DB00D616AD /* XCLocalSwiftPackageReference "Networking" */,
 				BA93AE4A2CA6CBFC00D616AD /* XCLocalSwiftPackageReference "DesignKit" */,
 				BA93AE8F2CA73CD500D616AD /* XCLocalSwiftPackageReference "Domain" */,
+				BA93AED62CA77D3500D616AD /* XCLocalSwiftPackageReference "Data" */,
 			);
 			productRefGroup = BAC3AE3B2CA5AC5900D30AEF /* Products */;
 			projectDirPath = "";
@@ -633,6 +640,10 @@
 			isa = XCLocalSwiftPackageReference;
 			relativePath = Domain;
 		};
+		BA93AED62CA77D3500D616AD /* XCLocalSwiftPackageReference "Data" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Data;
+		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -675,6 +686,14 @@
 		BA93AE922CA73CD500D616AD /* CoreDomain */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = CoreDomain;
+		};
+		BA93AED72CA77D3500D616AD /* CharactersData */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CharactersData;
+		};
+		BA93AED92CA77D3500D616AD /* DataConfigurations */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DataConfigurations;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
