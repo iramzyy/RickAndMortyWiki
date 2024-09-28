@@ -25,8 +25,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        Self.shared = self
-        configureApp() 
+        configureApp()
+        startApp() 
         return true
     }
     
@@ -34,6 +34,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         _ = [DataConfigurator.shared,
              DesignSystemConfigurator.shared
         ].map({$0.configure()})
+    }
+    
+    func startApp() {
+        window = UIWindow(frame: UIScreen.main.bounds)
+        struct UseCase: OnboardingCoordinatorUseCaseProtocol {
+            var window: UIWindow?
+        }
+        let coordinator = OnboardingCoordinator(useCase: UseCase(window: window))
+        coordinator.start()
+        // Set the initial view controller
+        Self.shared = self
     }
 }
 
