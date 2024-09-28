@@ -8,7 +8,7 @@
 import SwiftUI
 import Core
 
-struct PrimaryButton: View {
+public struct PrimaryButton: View {
     public var title: String
     public var action: Action
     
@@ -17,7 +17,7 @@ struct PrimaryButton: View {
         self.title = title
         self.action = action
     }
-    var body: some View {
+    public var body: some View {
         Button {
             action()
         } label: {

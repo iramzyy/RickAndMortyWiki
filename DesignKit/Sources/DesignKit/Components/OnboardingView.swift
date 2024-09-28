@@ -12,6 +12,14 @@ public struct OnboardingPage: Identifiable {
     let title: String
     let subtitle: String
     let imageName: String
+    
+    public init(title: String,
+                subtitle: String,
+                imageName: String) {
+        self.title = title
+        self.subtitle = subtitle
+        self.imageName = imageName
+    }
 }
 
 public struct OnboardingView: View {
@@ -32,21 +40,23 @@ public struct OnboardingView: View {
                             .scaledToFit()
                             .frame(width: .infinity, height: 300)
                             .foregroundColor(.blue)
-                        Spacer()
                         
                         Text(pages[index].title)
-                            .font(.title)
-                            .fontWeight(.bold)
+                            .font(Font.fredoka(weight: .bold, size: 18))
+                            .lineLimit(nil)
+                            .multilineTextAlignment(.center)
                             .padding(.top)
                         
                         Text(pages[index].subtitle)
-                            .font(.subheadline)
-                            .foregroundColor(.secondary)
+                            .font(Font.fredoka(weight: .regular, size: 14))
+                            .lineLimit(nil)
+                            .multilineTextAlignment(.center)
                             .padding(.horizontal)
                     }
                     .tag(index)
                 }
             }
+            .padding()
             .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
         }
         .padding(.bottom, 32)
