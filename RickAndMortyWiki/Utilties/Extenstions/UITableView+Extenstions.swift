@@ -1,5 +1,5 @@
 //
-//  UITableView+Extensions.swift
+//  UITableView+Extenstions.swift
 //  RickAndMortyWiki
 //
 //  Created by Ahmed Ramzy on 28/09/2024.

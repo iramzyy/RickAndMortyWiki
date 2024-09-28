@@ -1,5 +1,5 @@
 {
-  "originHash" : "d4e60f880a792487e8e076f48340fee05d0608929ec60f4358047a36a865f8c8",
+  "originHash" : "bf8f781177cb5ca5074e7ae6f24fa5e47d3d87f4ff16adf0b953b797dcc548bf",
   "pins" : [
     {
       "identity" : "keychain-swift",
@@ -8,15 +8,6 @@
       "state" : {
         "revision" : "5e1b02b6a9dac2a759a1d5dbc175c86bd192a608",
         "version" : "24.0.0"
-      }
-    },
-    {
-      "identity" : "nvactivityindicatorview",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/ninjaprox/NVActivityIndicatorView.git",
-      "state" : {
-        "revision" : "121455c4e630fcb95aaefd7e4257b0c2e3cfe6d5",
-        "version" : "5.2.0"
       }
     }
   ],

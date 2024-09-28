@@ -10,12 +10,12 @@ import Combine
 import CharactersDomain
 
 enum CharactersListViewModelCallbackType {
-    case details(id: String)
+    case details(id: Int)
 }
 
 typealias CharactersListViewModelCallback = ((CharactersListViewModelCallbackType) -> Void)
 
-class CharactersListViewModel: ObservableObject {
+class CharactersListViewModel {
     private let useCase: GetCharactersListUseCaseProtocol
     private var totalPages: Int = 0
     private var cancellables = Set<AnyCancellable>()
@@ -50,7 +50,7 @@ class CharactersListViewModel: ObservableObject {
     
     func didSelectCharacter(index: Int) {
         guard index < characters.count else { return }
-        callback(.details(id: String(characters[index].id)))
+        callback(.details(id: characters[index].id))
     }
     
     private func observeFilterChanges() {

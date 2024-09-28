@@ -50,7 +50,7 @@ class CharactersListViewController: UIViewController {
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        navigationController?.setNavigationBarHidden(true, animated: false)
+        navigationController?.setNavigationBarHidden(false, animated: false)
     }
 
     private func setupNavigationBar() {

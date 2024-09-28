@@ -17,12 +17,12 @@ protocol CharactersListingCoordinatorProtocol {
     func start()
 }
 
-
 class CharactersListingCoordinator: CharactersListingCoordinatorProtocol {
     let useCase: CharactersListingCoordinatorUseCaseProtocol
-
     private let window: UIWindow?
     private var viewModel: CharactersListViewModel?
+    private var childCoordinators: [Any] = []
+    private var navigationController: UINavigationController?
     
     required init(useCase: CharactersListingCoordinatorUseCaseProtocol) {
         self.useCase = useCase
@@ -33,20 +33,27 @@ class CharactersListingCoordinator: CharactersListingCoordinatorProtocol {
     
     func start() {
         let initialViewController = CharactersListViewController(viewModel: viewModel!)
-        let navigationController = UINavigationController(rootViewController: initialViewController)
+        navigationController = UINavigationController(rootViewController: initialViewController)
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
     }
-}
-
-
-private extension CharactersListingCoordinator {
-    func processViewModelCallback() -> CharactersListViewModelCallback {
+    
+    private func processViewModelCallback() -> CharactersListViewModelCallback {
         return { [weak self] type in
             switch type {
             case let .details(id):
-                print("Id = \(id)")
+                self?.navigateToCharacterDetails(id: id)
             }
         }
+    }
+    
+    private func navigateToCharacterDetails(id: Int) {
+        guard let navigationController = navigationController else { return }
+        
+        let useCase = CharacterDetailsCoordinatorUseCase(navigationController: navigationController,
+                                                         characterId: id)
+        let coordinator = CharacterDetailsCoordinator(useCase: useCase)
+        childCoordinators.append(coordinator)
+        coordinator.start()
     }
 }
