@@ -9,10 +9,10 @@ import UIKit
 import DesignKit
 
 class OnboardingViewController: UIViewController {
-    var viewModel: OnboardingViewModelProtocol?
+    var viewModel: OnboardingViewModel?
     
     // MARK: - Init
-    init(viewModel: OnboardingViewModelProtocol) {
+    init(viewModel: OnboardingViewModel) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }
@@ -30,7 +30,7 @@ class OnboardingViewController: UIViewController {
 
 extension OnboardingViewController {
     private func setupUI() {
-        if let viewModel = viewModel as? OnboardingViewModel {
+        if let viewModel = viewModel {
             let swiftuiView = OnboardingSwiftUI(viewModel: viewModel)
             addSubSwiftUIView(swiftuiView, to: view, backgroundColor: .white)
         }

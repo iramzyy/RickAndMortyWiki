@@ -13,7 +13,8 @@ import CoreDomain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     static var shared: AppDelegate!
 
-    var window:UIWindow?
+    var window: UIWindow?
+    var coordinator: OnboardingCoordinator?
     
     var appConfig: AppConfig = {
         guard let appConfig = AppConfig() else {
@@ -26,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         configureApp()
-        startApp() 
+        startApp()
         return true
     }
     
@@ -38,13 +39,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func startApp() {
         window = UIWindow(frame: UIScreen.main.bounds)
+        
         struct UseCase: OnboardingCoordinatorUseCaseProtocol {
             var window: UIWindow?
         }
-        let coordinator = OnboardingCoordinator(useCase: UseCase(window: window))
-        coordinator.start()
-        // Set the initial view controller
+        
+        coordinator = OnboardingCoordinator(useCase: UseCase(window: window))
+        coordinator?.start()
+        
         Self.shared = self
     }
 }
-

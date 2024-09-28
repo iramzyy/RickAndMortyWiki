@@ -26,7 +26,7 @@ struct OnboardingSwiftUI: View {
             ])
             
             PrimaryButton(title: "Start") {
-                viewModel.callback(.start)
+                viewModel.navigateToCharactersListing()
             }
             .padding()
         }

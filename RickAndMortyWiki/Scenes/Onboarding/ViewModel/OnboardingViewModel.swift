@@ -10,15 +10,12 @@ import Combine
 
 enum OnboardingViewModelCallbackType {
     case start
+    
 }
 
 typealias OnboardingViewModelCallback = ((OnboardingViewModelCallbackType) -> Void)
 
-protocol OnboardingViewModelProtocol: AnyObject {
-    var callback: OnboardingViewModelCallback { get set }
-}
-
-class OnboardingViewModel: OnboardingViewModelProtocol, ObservableObject {
+class OnboardingViewModel: ObservableObject {
     
     var callback: OnboardingViewModelCallback
     
@@ -26,4 +23,8 @@ class OnboardingViewModel: OnboardingViewModelProtocol, ObservableObject {
         self.callback = callback
     }
     
+    
+    func navigateToCharactersListing() {
+        callback(.start)
+    }
 }

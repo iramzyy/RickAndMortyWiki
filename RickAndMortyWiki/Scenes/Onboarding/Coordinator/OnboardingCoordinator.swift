@@ -11,15 +11,17 @@ import UIKit
 protocol OnboardingCoordinatorUseCaseProtocol {
     var window: UIWindow? { get set }
 }
+
 protocol OnboardingCoordinatorProtocol {
     init(useCase: OnboardingCoordinatorUseCaseProtocol)
     func start()
-
 }
+
 class OnboardingCoordinator: OnboardingCoordinatorProtocol {
     let useCase: OnboardingCoordinatorUseCaseProtocol
     private let window: UIWindow?
-    private var viewModel: OnboardingViewModelProtocol?
+    private var viewModel: OnboardingViewModel?
+    
     required init(useCase: OnboardingCoordinatorUseCaseProtocol) {
         self.useCase = useCase
         window = useCase.window
@@ -32,15 +34,27 @@ class OnboardingCoordinator: OnboardingCoordinatorProtocol {
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
     }
-}
 
-private extension OnboardingCoordinator {
-    func processViewModelCallback() -> OnboardingViewModelCallback {
-        return { [weak self] type in
+    private func processViewModelCallback() -> OnboardingViewModelCallback {
+        return { [unowned self] type in
             switch type {
             case .start:
-                print("Start")
+                self.navigateToCharactersList()
             }
         }
+    }
+    
+    private func navigateToCharactersList() {
+        struct UseCase: CharactersListingCoordinatorUseCaseProtocol {
+            var window: UIWindow?
+        }
+
+        guard let window = self.window else {
+            print("Window is Nil")
+            return
+        }
+          
+        let coordinator = CharactersListingCoordinator(useCase: UseCase(window: window))
+        coordinator.start()
     }
 }
