@@ -19,8 +19,6 @@
 		BA93AE932CA73CD500D616AD /* CoreDomain in Frameworks */ = {isa = PBXBuildFile; productRef = BA93AE922CA73CD500D616AD /* CoreDomain */; };
 		BA93AED82CA77D3500D616AD /* CharactersData in Frameworks */ = {isa = PBXBuildFile; productRef = BA93AED72CA77D3500D616AD /* CharactersData */; };
 		BA93AEDA2CA77D3500D616AD /* DataConfigurations in Frameworks */ = {isa = PBXBuildFile; productRef = BA93AED92CA77D3500D616AD /* DataConfigurations */; };
-		BAE4B51B2CA8523E001E6207 /* NVActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = BAE4B51A2CA8523E001E6207 /* NVActivityIndicatorView */; };
-		BAE4B51D2CA859A3001E6207 /* NVActivityIndicatorViewExtended in Frameworks */ = {isa = PBXBuildFile; productRef = BAE4B51C2CA859A3001E6207 /* NVActivityIndicatorViewExtended */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,11 +72,9 @@
 				BA93AD902CA5C95700D616AD /* Core in Frameworks */,
 				BA93AE932CA73CD500D616AD /* CoreDomain in Frameworks */,
 				BA93AE4C2CA6CBFC00D616AD /* DesignKit in Frameworks */,
-				BAE4B51D2CA859A3001E6207 /* NVActivityIndicatorViewExtended in Frameworks */,
 				BA93AD742CA5C8EC00D616AD /* Core in Frameworks */,
 				BA93AE912CA73CD500D616AD /* CharactersDomain in Frameworks */,
 				BA93AD772CA5C92A00D616AD /* Core in Frameworks */,
-				BAE4B51B2CA8523E001E6207 /* NVActivityIndicatorView in Frameworks */,
 				BA93AE1D2CA5F9DB00D616AD /* Networking in Frameworks */,
 				BA93ADEE2CA5DFE600D616AD /* StorageKit in Frameworks */,
 			);
@@ -153,8 +149,6 @@
 				BA93AE922CA73CD500D616AD /* CoreDomain */,
 				BA93AED72CA77D3500D616AD /* CharactersData */,
 				BA93AED92CA77D3500D616AD /* DataConfigurations */,
-				BAE4B51A2CA8523E001E6207 /* NVActivityIndicatorView */,
-				BAE4B51C2CA859A3001E6207 /* NVActivityIndicatorViewExtended */,
 			);
 			productName = RickAndMortyWiki;
 			productReference = BAC3AE3A2CA5AC5900D30AEF /* RickAndMortyWiki.app */;
@@ -247,7 +241,6 @@
 				BA93AE4A2CA6CBFC00D616AD /* XCLocalSwiftPackageReference "DesignKit" */,
 				BA93AE8F2CA73CD500D616AD /* XCLocalSwiftPackageReference "Domain" */,
 				BA93AED62CA77D3500D616AD /* XCLocalSwiftPackageReference "Data" */,
-				BAE4B5192CA8523E001E6207 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
 			);
 			productRefGroup = BAC3AE3B2CA5AC5900D30AEF /* Products */;
 			projectDirPath = "";
@@ -651,17 +644,6 @@
 		};
 /* End XCLocalSwiftPackageReference section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		BAE4B5192CA8523E001E6207 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ninjaprox/NVActivityIndicatorView.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.2.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
 /* Begin XCSwiftPackageProductDependency section */
 		BA93AD702CA5C8C100D616AD /* Core */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -710,16 +692,6 @@
 		BA93AED92CA77D3500D616AD /* DataConfigurations */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = DataConfigurations;
-		};
-		BAE4B51A2CA8523E001E6207 /* NVActivityIndicatorView */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = BAE4B5192CA8523E001E6207 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
-			productName = NVActivityIndicatorView;
-		};
-		BAE4B51C2CA859A3001E6207 /* NVActivityIndicatorViewExtended */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = BAE4B5192CA8523E001E6207 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
-			productName = NVActivityIndicatorViewExtended;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
